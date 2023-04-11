@@ -1,0 +1,3 @@
+[submodule "docs"]
+	path = lethiwe-mwendwa
+	url = git@github.com:lethiwe-mwendwa/lethiwe-mwendwa.github.io.git
