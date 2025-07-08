@@ -144,7 +144,7 @@ ul li {
 }
 
 .mainButtonCollection {
-    margin: 10rem;
+    margin: 0rem;
     justify-content: center;
     align-items: center;
     gap: 1rem;
@@ -156,9 +156,9 @@ ul li {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: 0.9rem;
     font-weight: bold;
     letter-spacing: 0.2rem;
