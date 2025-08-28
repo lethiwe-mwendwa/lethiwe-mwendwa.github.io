@@ -193,3 +193,10 @@ footer p {
     font-size: 0.9rem;
     color: var(--text-primary);
 }
+
+
+@media screen and (max-width: 800px) {
+  .overpass-mono{
+    font-size: 1rem; /* The font size is this when the viewport is 800px or smaller */
+  }
+}
