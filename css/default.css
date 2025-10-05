@@ -65,12 +65,57 @@ p{
     height: 300px;
 }
 
+.crt {
+    height: 100vh;
+    width: 100vw;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.crt-screen {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+}
+
+
+/* Horizontal scanlines */
+.crt::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+    width: 100vw;
+    height: 100vh;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 129, 129, 0.699) 0px,
+    rgba(143, 255, 240, 0.822) 5px,
+    transparent 1px,
+    transparent 4px
+  );
+  mix-blend-mode: multiply;
+  animation: flicker 0.1s infinite;
+}
+
+/* Flicker effect */
+@keyframes flicker {
+  15%, 10%, 10%, 15%, 15%, 34%, 100%, 99% ,70%, 50%, 20%, 16%, 15% {
+    opacity: 0.80;
+  }
+  20%, 24%, 55% {
+    opacity: 0.1;
+  }
+}
+
 #black-div, #white-div {
     flex: 1;
-    height: 100vh;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    height: 100vh;
 }
 
 #black-div {
